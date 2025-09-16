@@ -5,7 +5,7 @@ import Map from "../components/HomePage/Map";
 import Services from "../components/HomePage/Services";
 import Solutions from "../components/HomePage/Solutions";
 import Industries from "../components/HomePage/Industries";
-import WhyQAonCloud from "../components/HomePage/WhyQAonCloud";
+import WhyQC from "../components/HomePage/WhyQC";
 import QualitySoftware from "../components/HomePage/QualitySoftware";
 import ClientTestimonials from "../components/HomePage/ClientTestimonials";
 export default function Home() {
@@ -18,7 +18,7 @@ export default function Home() {
       <Services />
       <Solutions />
       <Industries />
-      <WhyQAonCloud />
+      <WhyQC />
       <ClientTestimonials />
     </>
   );

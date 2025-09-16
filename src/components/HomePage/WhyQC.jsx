@@ -44,7 +44,7 @@ const settings = {
   className: "slick-slider-custom", // Add this class for global styling
 };
 
-export default function WhyQAonCloud() {
+export default function WhyQC() {
   return (
     <div className={styles.wrapper}>
       <h2 className={styles.heading}>Why QAonCloud?</h2>
