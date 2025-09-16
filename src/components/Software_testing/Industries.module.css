@@ -1,0 +1,50 @@
+.container {
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #172c79, #36a4ff);
+  color: white;
+  text-align: center;
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.subheading {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 2rem;
+}
+
+.grid {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.card {
+  width: 15rem;
+  padding: 1.2rem;
+  border-radius: 10px;
+  background-color: white;
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: black;
+}
+
+.label {
+  font-size: 1rem;
+  font-weight: 500;
+  color: black;
+}

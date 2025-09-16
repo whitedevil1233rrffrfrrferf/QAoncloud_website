@@ -1,0 +1,23 @@
+.row_wrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  gap: 1.5rem;
+}
+
+.text_wrapper {
+  max-width: 27rem;
+  flex: 1;
+}
+
+.text_wrapper span {
+  display: block; /* Make it behave like a block element */
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.text_wrapper p {
+  margin: 0;
+  line-height: 1.5;
+  text-align: left;
+}

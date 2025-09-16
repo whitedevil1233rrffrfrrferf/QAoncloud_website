@@ -1,0 +1,21 @@
+.featureItem {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+.iconWrapper {
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease;
+}
+.iconWrapper:hover {
+  transform: scale(1.1);
+}
+
+.icon {
+  color: #4da0ff;
+}

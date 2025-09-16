@@ -1,0 +1,12 @@
+.container {
+  padding: 2.5rem;
+  background-color: #ffff;
+}
+.container h2 {
+  text-align: center !important;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.TimelineContainer {
+  margin-top: 2rem;
+}

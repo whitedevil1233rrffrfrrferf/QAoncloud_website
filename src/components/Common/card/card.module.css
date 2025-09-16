@@ -1,0 +1,45 @@
+.card {
+  background: #fff;
+  flex: 1 1 280px;
+  padding: 1.5rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  max-width: 300px;
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative; /* needed for absolute ::after */
+  overflow: hidden; /* to keep the line contained */
+  height: 18rem;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+}
+.card::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 3px;
+  background: var(--blue_linear_gradient_right); /* choose any color you want */
+  width: 0;
+  transition: width 0.4s ease-in-out;
+}
+
+.card:hover::after {
+  width: 100%;
+}
+
+.title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: #1a1a1a;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  margin-top: 1rem;
+  color: #555e6c;
+  line-height: 1.6;
+}

@@ -1,0 +1,11 @@
+.testimonials{
+    text-align: center;
+    padding: 2rem;
+}
+.testimonialCards{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1.5rem;
+    padding: 3rem;
+}

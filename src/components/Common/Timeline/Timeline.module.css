@@ -1,0 +1,72 @@
+.stepWrapper {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.iconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-right: 1.5rem;
+  position: relative;
+}
+
+.icon {
+  background-color: #2f8fff;
+  color: white;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: grid;
+  place-items: center;
+  font-size: 1.2rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.45);
+}
+.verticalLine {
+  position: absolute;
+  width: 1.5px;
+  height: 7rem;
+  background-color: lightgray;
+  margin-top: 4rem;
+  flex-grow: 1;
+}
+
+.content {
+  background-color: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  width: 50%;
+  border-radius: 20px;
+  padding: 1.5rem;
+}
+
+.stepNumber {
+  font-weight: bold;
+  color: #2f8fff;
+  font-size: 1.5rem;
+}
+
+.stepTitle {
+  font-weight: 650;
+
+  font-size: 1.1rem;
+}
+
+.stepDescription {
+  text-align: left;
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  line-height: 1.7;
+  color: gray;
+}
+.contentRow {
+  display: flex;
+  align-items: center;
+
+  gap: 1rem;
+}
+
+.content:hover {
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}

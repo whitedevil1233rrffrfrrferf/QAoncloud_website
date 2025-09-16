@@ -1,0 +1,54 @@
+.footer {
+  background-color: #172c54;
+  padding: 3.5rem;
+  color: white;
+}
+.footerLinks {
+  display: flex;
+  justify-content: space-around;
+}
+.footer h4 {
+  font-size: 1.5rem !important;
+  margin-bottom: 1rem;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer li {
+  margin-bottom: 0.5rem;
+  font-weight: 600 !important;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
+  font-weight: 400;
+  transition: color 0.3s ease;
+}
+
+.footer a:hover {
+  color: #3182ce; /* Light blue hover */
+}
+.bottomText {
+  margin-top: 4rem;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #ccc; /* Lighter shade for subtle footer info */
+}
+
+@media (max-width: 800px) {
+  .footerLinks {
+    flex-direction: column;
+    align-items: center; /* ✅ Center the content */
+    gap: 2rem; /* ✅ Add spacing between columns */
+  }
+
+  .footerLinks > div {
+    width: 100%; /* ✅ Make each column full width */
+    max-width: 15rem; /* ✅ Optional: limit width */
+    text-align: center; /* ✅ Center-align text inside */
+  }
+}

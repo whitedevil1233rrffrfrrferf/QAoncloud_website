@@ -1,0 +1,13 @@
+/* pages/TestingServices.module.css */
+.section {
+  padding: 4rem 2rem;
+  background-color: #f9fbfc;
+  text-align: center;
+}
+
+.cardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}

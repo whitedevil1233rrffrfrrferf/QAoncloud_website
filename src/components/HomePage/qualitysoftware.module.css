@@ -1,0 +1,63 @@
+.heroBanner {
+  text-align: center;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #fff, #dff2ff);
+  font-family: 'Poppins', sans-serif;
+}
+
+.mainHeading,
+.subHeading {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.subHeading {
+  color: #1ebeff;
+  margin-bottom: 3rem;
+}
+
+.statsRow {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.stat {
+  max-width: 200px;
+}
+
+.dot {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 1rem;
+  background: #1ebeff;
+  border-radius: 50%;
+  box-shadow: 0 0 20px rgba(0, 178, 255, 0.6);
+}
+
+.count {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #1ebeff;
+}
+
+.label {
+  font-weight: 600;
+  margin-top: 0.5rem;
+  color: #1ebeff;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+}
+
+.stat p {
+  font-size: 0.8rem;
+  color: #444;
+}
+
+.commitment {
+  margin-top: 3rem;
+  color: #555;
+  font-size: 1rem;
+}

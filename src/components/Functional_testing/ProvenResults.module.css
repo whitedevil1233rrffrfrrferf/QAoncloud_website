@@ -1,0 +1,54 @@
+.container {
+  text-align: center;
+  padding: 3rem 2rem;
+  background-color: white;
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.stats {
+  display: flex;
+  justify-content: center;
+  gap: 4rem;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.statBlock {
+  min-width: 150px;
+}
+
+.statValue {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #64748b;
+}
+
+.testimonialBox {
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 1.5rem;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  background-color: #f8fafc;
+}
+
+.quote {
+  font-size: 1.1rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.author {
+  font-size: 0.95rem;
+  color: #64748b;
+}

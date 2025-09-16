@@ -1,0 +1,27 @@
+.container {
+  background: linear-gradient(to right, #172c79, #36a4ff);
+  text-align: center;
+  color: white;
+  padding: 3rem;
+}
+.heading {
+  margin-bottom: 1rem;
+  font-size: 2rem;
+  font-weight: 800px !important;
+}
+.button {
+  display: flex;
+  justify-content: center;
+  border: 1px solid #fff;
+  width: 12rem;
+  margin: auto;
+  padding: 1rem;
+  border-radius: 40px;
+  transition: 0.4s ease-in-out;
+  margin-top: 2rem;
+}
+.button:hover {
+  background-color: #fff;
+  color: #172c79;
+  cursor: pointer;
+}

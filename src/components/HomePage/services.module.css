@@ -1,0 +1,49 @@
+.service {
+  background-color: var(--white-light);
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--light_gray_border); /* subtle top border */
+  /* Optional smooth box shadow instead: */
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+
+  margin: auto;
+}
+.para {
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: var(--foreground);
+  margin-top: 1rem;
+  color: gray;
+}
+.heading {
+  font-size: 3rem; /* adjust as needed */
+  font-weight: 800;
+  background: var(
+    --blue_linear_gradient_left
+  ); /* match the gradient in your image */
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+
+  text-align: center;
+}
+.card_container {
+  display: flex;
+  width: 75%;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  padding: 4rem 2rem;
+  flex-wrap: wrap;
+  gap: 3rem;
+}
+.solutions {
+  background-color: #f9fbfc;
+  padding: 4rem 2rem;
+  border-top: 1px solid var(--light_gray_border); /* subtle top border */
+  /* Optional smooth box shadow instead: */
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
+  margin-top: 2rem;
+
+  margin: auto;
+}

@@ -1,0 +1,75 @@
+/* .container {
+  background-color: #f9fbfc;
+  height: 50vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.sliderTrackContainer {
+  overflow: hidden;
+  white-space: nowrap;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.scrollWrapper {
+  display: flex;
+  gap: 1rem;
+  width: max-content;
+  animation: scroll 15s linear infinite;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-33.33%); 
+  }
+}
+*/
+/* ToolsAndTechnologies.module.css */
+.container {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9fbfc;
+}
+.heading {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.subheading {
+  font-size: 1rem;
+  color: gray;
+  margin-bottom: 2rem;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 2rem;
+}
+.item {
+  background: white;
+  border: 1px solid #ddd;
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.3s ease;
+}
+.item:hover {
+  transform: translateY(-5px);
+}
+.icon {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #007bff;
+}
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.3rem;
+}
+.description {
+  color: #555;
+  font-size: 0.95rem;
+}

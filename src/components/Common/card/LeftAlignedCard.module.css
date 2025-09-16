@@ -1,0 +1,38 @@
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 1.5rem;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in-out;
+  width: 20rem;
+}
+
+/* New: flex layout for alignment */
+.inner {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+}
+
+.icon {
+  font-size: 2rem;
+  color: #0f172a;
+  flex-shrink: 0;
+  margin-top: 0.2rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+  color: #0f172a;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #64748b;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}

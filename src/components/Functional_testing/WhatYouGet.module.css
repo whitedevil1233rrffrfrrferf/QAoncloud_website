@@ -1,0 +1,69 @@
+.section {
+  text-align: center;
+  padding: 3rem 2rem;
+  background: linear-gradient(to right, #172c79, #36a4ff);
+}
+
+.heading {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2.5rem;
+  color: #ffff;
+}
+
+.cardsContainer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 2rem;
+  width: 100%;
+  max-width: 420px;
+  text-align: left;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cardTitle {
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 0.95rem;
+  margin-bottom: 1rem;
+  text-align: left;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.list li {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.icon {
+  margin-right: 0.5rem;
+  color: #0f172a;
+  flex-shrink: 0;
+}
+.card:hover {
+  transform: scale(1.09);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.9); /* soft blurry effect */
+}

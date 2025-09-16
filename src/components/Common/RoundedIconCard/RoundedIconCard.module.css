@@ -1,0 +1,46 @@
+.card {
+  flex: 1 1 280px; /* allow responsive shrink/grow with min width */
+  max-width: 320px;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  padding: 2rem;
+  text-align: center;
+  overflow: visible;
+  position: relative;
+  transition: transform 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.iconCircle {
+  position: absolute;
+  top: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f0f4f8;
+  border: 3px solid #ffffff;
+  border-radius: 50%;
+  width: 80px; /* fixed size to ensure symmetry */
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+.title {
+  margin-top: 2.5rem;
+  font-weight: 600;
+  font-size: 1.2rem;
+  color: #222;
+}
+
+.description {
+  margin-top: 0.5rem;
+  font-size: 0.95rem;
+  color: #555;
+}

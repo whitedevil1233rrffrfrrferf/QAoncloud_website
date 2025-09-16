@@ -1,0 +1,34 @@
+.iconContainer {
+  display: flex;
+
+  padding: 3rem 1rem;
+  background-color: #f9f9f9; /* optional */
+}
+
+.section_inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start; /* ensures left-aligned children */
+  width: 100%;
+  max-width: 800px; /* control width of content */
+  gap: 2rem;
+}
+
+.section_inner h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-weight: 600;
+  animation: colorShift 1.5s ease-in-out infinite;
+}
+
+@keyframes colorShift {
+  0% {
+    color: #2f8fff;
+  }
+  50% {
+    color: black;
+  }
+  100% {
+    color: #2f8fff;
+  }
+}

@@ -1,0 +1,10 @@
+.container {
+  padding: 3rem 1rem;
+  background: #f8fafc;
+}
+.cards {
+  display: flex;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}

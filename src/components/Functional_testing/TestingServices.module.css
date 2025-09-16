@@ -1,0 +1,48 @@
+.container {
+  text-align: center;
+  padding: 2rem;
+  background-color: #f9fbfc;
+}
+
+.heading {
+  margin-bottom: 2.5rem;
+  font-weight: 700;
+}
+
+.CardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+/* Apply fixed width to each card */
+.card {
+  width: 280px; /* Fixed width for all cards */
+  padding: 1.5rem;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  background-color: #fff;
+  transition: box-shadow 0.2s ease-in-out;
+}
+
+.card:hover {
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+}
+
+.icon {
+  font-size: 2rem;
+  color: #0f172a;
+  margin-bottom: 1rem;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 0.5rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #64748b;
+}

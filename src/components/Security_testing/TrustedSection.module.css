@@ -1,0 +1,32 @@
+.TrustedSection {
+  background-color: white;
+  border-radius: 1.5rem;
+  padding: 3rem 1rem;
+  width: 100%;
+  max-width: 500px; /* or whatever fixed width you want */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+.rightColumn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  max-width: 100%;
+  align-items: center;
+}
+
+.companyGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.companyBox {
+  padding: 1rem 1.5rem;
+  border: 1px solid #eee;
+  border-radius: 0.75rem;
+  font-weight: 500;
+  color: #526173;
+  background-color: #fefefe;
+}

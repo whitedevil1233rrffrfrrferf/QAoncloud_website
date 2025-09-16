@@ -1,0 +1,38 @@
+.service {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin-bottom: 40px;
+}
+
+.icon {
+  width: 5rem;
+  height: auto;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: 700;
+  width: 15rem;
+  margin-bottom: 1rem !important;
+  color: #0d2b52;
+
+  text-align: left;
+}
+
+.underline {
+  width: 10rem;
+  height: 3px;
+  margin-bottom: 1.5rem !important;
+
+  background-color: #00a8ff;
+  text-align: center;
+}
+
+.text {
+  font-size: 15px;
+  line-height: 1.6;
+  color: #333;
+  text-align: left;
+}

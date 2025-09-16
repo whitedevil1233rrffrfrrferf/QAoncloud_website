@@ -1,0 +1,40 @@
+/* components/IconCard.module.css */
+.card {
+  background-color: #fff;
+  padding: 1.8rem;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  transition: transform 0.2s ease;
+  flex: 1 15rem;
+  max-width: 20rem;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.iconWrapper {
+  background-color: #eaf4ff;
+  display: inline-block;
+  padding: 1rem;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.icon {
+  font-size: 24px;
+  color: #1e3a8a;
+}
+
+.title {
+  font-size: 1.1rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.description {
+  font-size: 0.95rem;
+  color: #555;
+  line-height: 1.4;
+}
