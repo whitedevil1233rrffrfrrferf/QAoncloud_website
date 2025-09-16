@@ -1,5 +1,5 @@
 import Head from "next/head";
-import styles from "./banner.module.css";
+import styles from "./Banner.module.css";
 import Image from "next/image";
 
 import Button from "../Common/Button/Button";
