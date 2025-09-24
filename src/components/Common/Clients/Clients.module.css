@@ -1,0 +1,48 @@
+.container {
+  padding: 2rem;
+  background-color: #fff;
+  text-align: center;
+  width: 75%;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2.5rem;
+  font-weight: bold;
+  margin-bottom: 40px;
+  border-bottom: 2px solid #333;
+  display: inline-block;
+  padding-bottom: 10px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+  gap: 5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.card {
+  border-radius: 8px;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  cursor: pointer;
+  max-width: 10rem;
+  max-height: 7rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  max-width: 7rem;
+  max-height: 7rem;
+  object-fit: contain;
+}
+
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}

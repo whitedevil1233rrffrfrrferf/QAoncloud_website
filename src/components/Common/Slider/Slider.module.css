@@ -1,0 +1,97 @@
+.section {
+  width: 100%;
+  padding: 4rem 1rem;
+  background: linear-gradient(to bottom, #fff, #faf5ff);
+  text-align: center;
+}
+.header h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #2b6cb0;
+  margin-bottom: 0.5rem;
+}
+.header p {
+  font-size: 1rem;
+  color: #4a5568;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+.slider {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+.card {
+  background: #fff;
+  padding: 2rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 15rem;
+}
+.card h3 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1rem;
+  color: #1a202c;
+}
+
+.card p {
+  font-size: 1rem;
+  margin-top: 0.5rem;
+  color: #4a5568;
+  max-width: 30rem;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 1rem;
+}
+.icon {
+  margin-bottom: 1rem;
+}
+.card:hover {
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.1);
+}
+.card:hover .icon {
+  transform: scale(1.2); /* zoom in */
+}
+.card h3 {
+  transition: color 0.3s ease;
+}
+
+.card:hover h3 {
+  color: #2b6cb0; /* text color changes on hover */
+}
+
+/* move slick arrows */
+.slider :global(.slick-prev) {
+  left: +50px !important; /* push it out more */
+}
+
+.slider :global(.slick-next) {
+  right: +50px !important; /* match it symmetrically */
+}
+
+/* optional style tweaks */
+.slider :global(.slick-prev:before),
+.slider :global(.slick-next:before) {
+  font-size: 2rem !important;
+}
+@media (max-width: 768px) {
+  .header h2 {
+    font-size: 1.5rem;
+  }
+
+  .card {
+    padding: 1.5rem;
+  }
+
+  .card h3 {
+    font-size: 1.2rem;
+  }
+
+  .card p {
+    font-size: 0.9rem;
+  }
+}

@@ -1,6 +1,6 @@
 import AutomationProcess from "@/components/Automation_testing/AutomationProcess";
 import Benefits from "@/components/Automation_testing/Benefits";
-import ClientTestimonial from "@/components/Automation_testing/ClientTestimonial";
+import Clients from "@/components/Common/Clients/Clients";
 import Tools from "@/components/Automation_testing/Tools";
 import Banners from "@/components/Common/Banner/Banner";
 
@@ -16,7 +16,8 @@ export default function AutomationTesting() {
       <Benefits />
       <AutomationProcess />
       <Tools />
-      <ClientTestimonial />
+
+      <Clients />
     </div>
   );
 }

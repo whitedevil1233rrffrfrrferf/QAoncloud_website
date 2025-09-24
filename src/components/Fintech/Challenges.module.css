@@ -1,0 +1,29 @@
+.challenges_section {
+  background: #f9fafb;
+  padding: 64px 16px;
+}
+
+.challenges_container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.challenges_heading {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.challenges_subtitle {
+  margin-top: 8px;
+  color: #6b7280;
+  font-size: 16px;
+}
+
+.challenges_grid {
+  margin-top: 48px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 24px;
+}

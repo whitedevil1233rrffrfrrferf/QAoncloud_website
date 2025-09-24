@@ -25,7 +25,9 @@ export default function Nav() {
         <div className={`${styles.navMenu} ${isOpen ? styles.showMenu : ""}`}>
           <ul className={styles.navLinks}>
             <li className={styles.dropdown}>
-              <span className={styles.navLink}>Services</span>
+              <span className={styles.navLink}>
+                Services <span className={styles.dropdownIcon}>▲</span>
+              </span>
               <div className={styles.dropdownMenu}>
                 <div className={styles.serviceList}>
                   <ul>
@@ -100,7 +102,9 @@ export default function Nav() {
             </li>
 
             <li className={styles.dropdown}>
-              <span className={styles.navLink}>Solutions</span>
+              <span className={styles.navLink}>
+                Solutions <span className={styles.dropdownIcon}>▲</span>
+              </span>
               <div className={styles.dropdownMenu}>
                 <div className={styles.serviceList}>
                   <ul>
@@ -168,7 +172,9 @@ export default function Nav() {
               </div>
             </li>
             <li className={styles.dropdown}>
-              <span className={styles.navLink}>Industries</span>
+              <span className={styles.navLink}>
+                Industries <span className={styles.dropdownIcon}>▲</span>
+              </span>
               <div className={styles.dropdownMenu}>
                 <div className={styles.serviceList}>
                   <ul>
@@ -224,7 +230,9 @@ export default function Nav() {
               </div>
             </li>
             <li className={styles.dropdown}>
-              <span className={styles.navLink}>Insights</span>
+              <span className={styles.navLink}>
+                Insights <span className={styles.dropdownIcon}>▲</span>
+              </span>
               <div className={styles.dropdownMenu}>
                 <div className={styles.serviceList}>
                   <ul>

@@ -8,6 +8,7 @@ import Industries from "../components/HomePage/Industries";
 import WhyQC from "../components/HomePage/WhyQC";
 import QualitySoftware from "../components/HomePage/QualitySoftware";
 import ClientTestimonials from "../components/HomePage/ClientTestimonials";
+import ContactUs from "@/components/Security_testing/ContactUs";
 export default function Home() {
   return (
     <>
@@ -20,6 +21,7 @@ export default function Home() {
       <Industries />
       <WhyQC />
       <ClientTestimonials />
+      <ContactUs />
     </>
   );
 }

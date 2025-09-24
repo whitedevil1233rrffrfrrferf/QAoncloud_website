@@ -1,7 +1,9 @@
 import Banners from "@/components/Common/Banner/Banner";
+import Clients from "@/components/Common/Clients/Clients";
 import MobileProcess from "@/components/Mobile_testing/MobileProcess";
 import MobileTestingServices from "@/components/Mobile_testing/MobileTestingServices";
 import WhyMobileServices from "@/components/Mobile_testing/WhyMobileServices";
+import ContactUs from "@/components/Security_testing/ContactUs";
 
 export default function MobileTesting() {
   return (
@@ -15,6 +17,8 @@ export default function MobileTesting() {
       <MobileTestingServices />
       <WhyMobileServices />
       <MobileProcess />
+      <Clients />
+      <ContactUs />
     </div>
   );
 }

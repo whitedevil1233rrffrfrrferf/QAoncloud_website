@@ -233,7 +233,7 @@
 .navMenu {
   display: flex;
   align-items: center;
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .navLinks {
@@ -268,35 +268,65 @@
   display: none;
   min-width: 520px;
   z-index: 1000;
-  padding: 1.5rem 2rem;
+  padding: 0; /* reset */
+  margin-top: 1rem;
 }
-
+.dropdown:hover::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 0;
+  width: 100%;
+  height: 4rem; /* same as your margin gap */
+}
 .dropdown:hover .dropdownMenu {
   display: flex;
-  gap: 2rem;
 }
 
 .serviceList {
   display: flex;
-
-  gap: 2rem; /* space between columns */
+  width: 100%;
 }
 
 .serviceList > ul {
   flex: 1;
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding: 1rem 0;
 }
 
+.serviceList ul li {
+  padding: 0.5rem 1.5rem;
+}
+
+/* Divider between columns */
 .menuBorder {
-  border: none;
-  padding-left: 0; /* remove spacing that was for the divider */
+  border-left: 1px solid #e0e0e0;
 }
 
+/* Menu items */
+.dropdownItem {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #0b1d43;
+  transition: all 0.2s ease;
+  border-radius: 4px;
+  padding: 0.5rem;
+}
+
+/* Hover effect: background + text color */
+.dropdownItem:hover {
+  background-color: #f2f6fc;
+}
+
+/* Icons */
 .menuIcon {
-  width: 24px;
-  height: 24px;
+  width: 22px;
+  height: 22px;
   flex-shrink: 0;
 }
 
@@ -308,10 +338,6 @@
   padding: 0.5rem 0;
   text-decoration: none;
   color: #0b1d43;
-}
-
-.dropdownItem:hover {
-  color: #00baff;
 }
 
 .cta {
@@ -328,12 +354,15 @@
 .cta:hover {
   background-color: #0099d1;
 }
+.navLinks > li .dropdownMenu {
+  left: -10rem;
+}
 .navLinks > li:last-child .dropdownMenu {
   left: auto;
   right: 0;
 }
 .navLinks > li:last-child .dropdownMenu {
-  left: 50%;
+  left: 30%;
   transform: translateX(-50%);
   right: auto;
   min-width: 200px; /* Set smaller width */
@@ -341,12 +370,18 @@
   padding: 1rem;
   justify-content: center;
 }
-.navLinks > li:nth-last-child(2) .dropdownMenu {
-  left: auto;
-
-  right: 0;
-  min-width: 520px; /* Keep your big menu style */
+.dropdownIcon {
+  font-size: 1rem;
+  margin-left: 6px;
+  display: inline-block; /* important: allows transform */
+  transition: transform 0.25s ease-in-out;
 }
+
+/* Optional rotate when open */
+.dropdown:hover .dropdownIcon {
+  transform: rotate(180deg);
+}
+
 /* Mobile styles */
 @media (max-width: 991px) {
   .toggle {
