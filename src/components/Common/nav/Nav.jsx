@@ -70,31 +70,37 @@ export default function Nav() {
                   </ul>
                   <ul className={styles.menuBorder}>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Regression_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/responsive-devices.png"
+                          src="/images/Nav/services/automated-process.png"
                           className={styles.menuIcon}
                         />
                         Regression Testing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link href="/API_testing" className={styles.dropdownItem}>
                         <img
-                          src="/menu-icons/solution/web-browser.png"
+                          src="/images/Nav/services/api.png"
                           className={styles.menuIcon}
                         />
                         API Testing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Agile_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/smart-tv.png"
+                          src="/images/Nav/services/agile.png"
                           className={styles.menuIcon}
                         />
                         Agile Testing
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -121,51 +127,66 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Website_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/feature.png"
+                          src="/images/Nav/solution/feature.png"
                           className={styles.menuIcon}
                         />
                         Web App Testing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Game_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/testing.png"
+                          src="/images/Nav/solution/testing.png"
                           className={styles.menuIcon}
                         />
                         Game Testing
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <ul className={styles.menuBorder}>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Cross_platform_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/responsive-devices.png"
+                          src="/images/Nav/solution/responsive-devices.png"
                           className={styles.menuIcon}
                         />
                         Cross-Platform Testing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/Cross_browser_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/web-browser.png"
+                          src="/images/Nav/solution/web-browser.png"
                           className={styles.menuIcon}
                         />
                         Cross-Browser Testing
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/SmartTV_testing"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/smart-tv.png"
+                          src="/images/Nav/solution/smart-tv.png"
                           className={styles.menuIcon}
                         />
                         Smart TV Testing
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
@@ -179,51 +200,63 @@ export default function Nav() {
                 <div className={styles.serviceList}>
                   <ul>
                     <li>
-                      <Link href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/FinTechTestingServices"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/app-development.png"
+                          src="/images/Nav/indus/fintech.png"
                           className={styles.menuIcon}
                         />
                         Banking & Financial Services
                       </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/CommunicationsTestingServices"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/feature.png"
+                          src="/images/Nav/indus/tower.png"
                           className={styles.menuIcon}
                         />
                         Communications
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/EventManagementTestingServices"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/testing.png"
+                          src="/images/Nav/indus/calendar.png"
                           className={styles.menuIcon}
                         />
                         Event Management
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                   <ul className={styles.menuBorder}>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link href="/ECommerce" className={styles.dropdownItem}>
                         <img
-                          src="/menu-icons/solution/responsive-devices.png"
+                          src="/images/Nav/indus/ecommerce.png"
                           className={styles.menuIcon}
                         />
                         E-commerce
-                      </a>
+                      </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link
+                        href="/AITestingServices"
+                        className={styles.dropdownItem}
+                      >
                         <img
-                          src="/menu-icons/solution/web-browser.png"
+                          src="/images/Nav/indus/artificial-intelligence.png"
                           className={styles.menuIcon}
                         />
                         Artificial Intelligence
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>
