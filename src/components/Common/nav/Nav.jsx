@@ -291,7 +291,7 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <a href="/FAQ" className={styles.dropdownItem}>
                         <img
                           src="/menu-icons/solution/testing.png"
                           className={styles.menuIcon}
