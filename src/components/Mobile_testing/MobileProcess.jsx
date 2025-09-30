@@ -10,40 +10,47 @@ import {
 
 import classes from "./MobileProcess.module.css";
 import LeftAlignedCard from "../Common/card/LeftAlignedCard";
+import Card from "../Common/card/Card";
 export default function MobileProcess() {
   return (
     <div className={classes.container}>
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
-        <LeftAlignedCard
-          Icon={FiTarget}
+        <Card
           title="Usability Testing"
-          description="Test single components for reliability"
+          description="
+          Create a User-friendly interface. Utilize user data to enhance mobile application. Enhance aesthetics and functionalities to suit end-users."
         />
-        <LeftAlignedCard
-          Icon={FiCheckCircle}
+        <Card
           title="Mobile Functional Testing"
-          description="Initial sanity check for core functionality"
+          description="
+          Ensure that all functionalities are compatible. Assess the performance of distinct functions. Meet end-user needs with custom testing strategies. Ensure seamless integration of all functionalities for better UI/UX."
         />
-        <LeftAlignedCard
-          Icon={FiUsers}
+        <Card
+          title="Mobile Load And Performance Testing"
+          description="
+          Use specific loads to test app performance. Enhance app performance to meet evolving needs of the business. Optimize app performance based on well-defined KPIs. Eliminate bandwidth issues and detect memory usage."
+        />
+        <Card
           title="Compliance Testing"
-          description="UI/UX consistency across platforms"
+          description="
+          Compliance with standards and regulations. Help mobile apps meet rules specified by the industry. Enhance app functionalities and security to meet industry-specific needs."
         />
-        <LeftAlignedCard
-          Icon={FiZap}
+
+        <Card
           title="Mobile Security Testing"
-          description="Front-to-backend workflow validation"
+          description="
+          Ensure seamless integrations of the app codes. Identify potential risks of breach. Secure apps to prevent loss of data and privacy. Prevent increased downtime with increased security."
         />
-        <LeftAlignedCard
-          Icon={FiUserCheck}
+        <Card
           title="Mobile Test Automation"
-          description="Real user scenarios and feedback"
+          description="
+          Test large data quickly. Save costs with reduced manual labor. Reduce errors while testing with automated test scripts."
         />
-        <LeftAlignedCard
-          Icon={FiShield}
+        <Card
           title="Mobile Accessibility Testing"
-          description="Ensure updates don't break existing features"
+          description="
+          Ensure usability and app friendliness. Enhance app quality with an intuitive user interface. Test specialized features and functionalities to increase accessibility."
         />
       </div>
     </div>

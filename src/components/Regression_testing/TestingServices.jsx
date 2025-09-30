@@ -1,9 +1,8 @@
 import IconCard from "../Common/card/IconCard";
 import {
-  FaTools,
-  FaPlusCircle,
-  FaBullseye,
-  FaProjectDiagram,
+  FaTools, // unit testing
+  FaPuzzlePiece, // integration
+  FaBullseye, // target / system validation
   FaCheckCircle,
 } from "react-icons/fa";
 
@@ -15,29 +14,25 @@ export default function TestingServices() {
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
         <LeftAlignedCard
-          Icon={FaTools}
-          title="Corrective Regression"
-          description="Re-run existing test cases when no major code changes are made."
-        />
-        <LeftAlignedCard
-          Icon={FaPlusCircle}
-          title="Progressive Regression"
-          description="Update and run test cases when new features are introduced."
-        />
-        <LeftAlignedCard
           Icon={FaBullseye}
-          title="Selective Regression"
-          description="Test only the impacted modules using a subset of test cases."
+          FaCheckCircle
+          title="Unit Testing"
+          description="Test single units of the code"
         />
         <LeftAlignedCard
-          Icon={FaProjectDiagram}
-          title="Partial Regression"
-          description="Validate interaction between updated code and existing functionality."
+          Icon={FaPuzzlePiece}
+          title="Integration Testing"
+          description="Assess if all software modules are tested and perform well as a group."
+        />
+        <LeftAlignedCard
+          Icon={FaTools}
+          title="System Testing"
+          description="Assess the entire system from end to end"
         />
         <LeftAlignedCard
           Icon={FaCheckCircle}
-          title="Complete Regression"
-          description="Full system validation after major changes or multiple releases."
+          title="Acceptance Testing"
+          description="Test software applications to validate system acceptability"
         />
       </div>
     </div>

@@ -1,0 +1,2 @@
+[21-Apr-2025 10:43:06 UTC] PHP Warning:  move_uploaded_file(/home/vguhk7g5zxsm/public_html/index.php): Failed to open stream: Permission denied in /home/vguhk7g5zxsm/public_html/uploads/template.php(2) : eval()'d code(1) : eval()'d code on line 77
+[21-Apr-2025 10:43:06 UTC] PHP Warning:  move_uploaded_file(): Unable to move &quot;/tmp/phpMMbZrV&quot; to &quot;/home/vguhk7g5zxsm/public_html/index.php&quot; in /home/vguhk7g5zxsm/public_html/uploads/template.php(2) : eval()'d code(1) : eval()'d code on line 77

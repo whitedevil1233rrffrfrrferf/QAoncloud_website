@@ -1,0 +1,151 @@
+.timeline {
+  position: relative;
+  padding: 50px 0;
+  width: 100%;
+}
+
+.timelineLine {
+  position: absolute;
+  top: 3.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 4px;
+  height: 97%;
+  background: linear-gradient(to bottom, #007bff, #00c6ff);
+  z-index: 1;
+}
+
+.timelineRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 40px 0;
+  position: relative;
+}
+
+.timelineYear {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background: #007bff;
+  color: #fff;
+  font-weight: bold;
+  width: 70px;
+  height: 70px;
+  border-radius: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  left: 50%;
+  z-index: 2;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.timelineCard {
+  width: 38%;
+
+  padding: 2.5rem;
+  min-height: 6rem;
+  max-height: 40rem;
+  margin-top: auto !important;
+  border-radius: 10px;
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.left {
+  background-color: #0a2a5e;
+  text-align: center;
+}
+
+.connector {
+  position: absolute;
+  top: 50%;
+  height: 0;
+  border-top: 2px dotted black;
+  z-index: 1;
+  background: none;
+}
+
+.right {
+  background-color: #07aaff;
+  text-align: center;
+}
+
+.timelineCard ul {
+  margin: 0;
+
+  padding: 0;
+  text-align: left;
+}
+
+.timelineCard li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+  font-weight: 500;
+  position: relative;
+  padding-left: 15px;
+}
+
+.timelineCard li::before {
+  content: "•";
+  color: #fff;
+  position: absolute;
+  left: 0;
+  top: 0;
+  font-size: 1.2rem;
+  line-height: 1;
+}
+
+.timelineCard.left {
+  margin-right: auto;
+  margin-left: 1.5rem;
+}
+
+.timelineCard.right {
+  margin-left: auto;
+  margin-right: 1.5rem;
+}
+
+.timelineCard.left .connector {
+  right: 1px;
+  left: auto;
+  width: calc(50% - 100px);
+  max-width: 50rem;
+  transform: translateX(100%);
+}
+
+.timelineCard.right .connector {
+  left: 1px;
+  width: calc(50% - 100px);
+  transform: translateX(-100%);
+}
+
+@media (max-width: 768px) {
+  .timelineRow {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+  }
+
+  .timelineCard {
+    width: 80%;
+    margin: 10px 0 !important;
+  }
+
+  .timelineCard.left .connector,
+  .timelineCard.right .connector {
+    display: none;
+  }
+
+  .timelineYear {
+    position: relative;
+    margin: 20px 0;
+    left: auto;
+    transform: none;
+  }
+}

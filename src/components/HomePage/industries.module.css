@@ -7,12 +7,6 @@
   max-width: 100%;
 }
 
-.heading {
-  font-size: 2rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
 .tabButtons {
   display: flex;
 
@@ -114,6 +108,7 @@
     margin: auto;
   }
   .image {
-    width: 25rem;
+    width: 100%;
+    height: auto;
   }
 }

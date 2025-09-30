@@ -1,4 +1,10 @@
-import { FaPlug, FaExchangeAlt, FaTachometerAlt, FaLock } from "react-icons/fa";
+import {
+  FaShieldAlt, // shield / protection
+  FaKey, // access
+  FaClock, // time / load
+  FaMoneyBillWave, // security / restriction
+  FaGlobe,
+} from "react-icons/fa";
 import IconCard from "../Common/card/IconCard";
 import styles from "./WhyAPITesting.module.css";
 
@@ -8,24 +14,29 @@ export default function WhyAPITesting() {
       <h2>Why API Testing Matters</h2>
       <div className={styles.CardGrid}>
         <IconCard
-          Icon={FaPlug}
-          title="Verify API Reliability"
-          description="Ensure every endpoint responds accurately, consistently, and within expected timeframes."
+          Icon={FaShieldAlt}
+          title="Secure protection"
+          description="Protects the app from malicious code and breakage"
         />
         <IconCard
-          Icon={FaExchangeAlt}
-          title="Validate Data Integrity"
-          description="Confirm that inputs and outputs match specifications, safeguarding against broken integrations."
+          Icon={FaKey}
+          title="Core access"
+          description="Does not need access to app UI and aids in parallel app development"
         />
         <IconCard
-          Icon={FaTachometerAlt}
-          title="Test Performance & Scalability"
-          description="Measure how your APIs handle load, stress, and edge cases to prevent bottlenecks in production."
+          Icon={FaClock}
+          title="Time effective"
+          description="Lesser time to test and easy to maintain"
         />
         <IconCard
-          Icon={FaLock}
-          title="Secure API Interactions"
-          description="Identify vulnerabilities and enforce authentication, authorization, and data protection standards."
+          Icon={FaMoneyBillWave}
+          title="Cost-saving"
+          description="Speeds up development workflows, which reduces overall costs"
+        />
+        <IconCard
+          Icon={FaGlobe}
+          title="Language Independent"
+          description="No need for code languages to execute API testing"
         />
       </div>
     </div>

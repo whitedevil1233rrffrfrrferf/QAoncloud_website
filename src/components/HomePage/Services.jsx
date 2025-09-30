@@ -1,14 +1,16 @@
 import styles from "./services.module.css";
 import Card from "../Common/card/Card";
+import SectionHeader from "../Common/SectionHeader/SectionHeader";
 function Services() {
   return (
     <div className={styles.service}>
-      <h1 className={styles.heading}>Services</h1>
-      <p className={styles.para}>
-        Our full range of QA testing Services are delivered by highly skilled
-        and trained QA professionals dedicated <br />
-        to timely deliveries with uncompromised quality.
-      </p>
+      <SectionHeader
+        heading="Services"
+        subheading="Our full range of QA testing Services are delivered by highly skilled
+        and trained QA professionals dedicated 
+        to timely deliveries with uncompromised quality."
+      />
+
       <div className={styles.card_container}>
         <Card
           title="Automated Testing"

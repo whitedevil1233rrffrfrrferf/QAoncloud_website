@@ -13,6 +13,9 @@
   justify-content: center;
   flex-wrap: wrap;
   gap: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Add this — it affects the direct children (IconCard components) */
@@ -20,4 +23,9 @@
   flex: 1 1 20rem;
   min-width: 20rem;
   max-width: 25rem; /* optional, for better layout control */
+}
+@media (max-width: 768px) {
+  .CardContainer {
+    width: 100%;
+  }
 }

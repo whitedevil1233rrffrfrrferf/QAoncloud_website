@@ -1,4 +1,11 @@
-import { FaBolt, FaSyncAlt, FaUsers, FaCheckCircle } from "react-icons/fa";
+import {
+  FaBolt, // fast, TDD
+  FaInfinity, // continuous development
+  FaRocket, // quick to market
+  FaUsers, // customer-centric
+  FaCloud, // tech implementations (AI & Cloud)
+} from "react-icons/fa";
+
 import IconCard from "../Common/card/IconCard";
 import styles from "./WhyAgileTesting.module.css";
 
@@ -9,23 +16,28 @@ export default function WhyAgileTesting() {
       <div className={styles.CardGrid}>
         <IconCard
           Icon={FaBolt}
-          title="Faster Feedback Loops"
-          description="Get rapid insights on code quality and functionality, enabling quick adjustments during sprints."
+          title="Test-Driven Development"
+          description="To implement accurate functionalities with an established success rate"
         />
         <IconCard
-          Icon={FaSyncAlt}
-          title="Adapt with Change"
-          description="Easily align testing with evolving requirements, ensuring quality even as priorities shift."
+          Icon={FaInfinity}
+          title="Continuous Development"
+          description="Reduced development cost and time with continuous integration and development"
+        />
+        <IconCard
+          Icon={FaRocket}
+          title="Quick to Market"
+          description="DevOps methodology to launch products faster by 50%"
         />
         <IconCard
           Icon={FaUsers}
-          title="Team Collaboration"
-          description="Bridge the gap between developers, testers, and product owners with shared visibility and goals."
+          title="Customer-Centric Approach"
+          description="Use customer behavior data to craft tailor-made apps"
         />
         <IconCard
-          Icon={FaCheckCircle}
-          title="Continuous Quality"
-          description="Embed testing into every sprint to ensure working software is always delivered with confidence."
+          Icon={FaCloud}
+          title="Tech Savvy Implementations"
+          description="Leverage AI and cloud technology to enhance app functionalities"
         />
       </div>
     </div>

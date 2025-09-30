@@ -9,6 +9,7 @@
   overflow: visible;
   position: relative;
   transition: transform 0.3s ease;
+  margin-bottom: 2rem;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -34,13 +35,19 @@
 
 .title {
   margin-top: 2.5rem;
-  font-weight: 600;
-  font-size: 1.2rem;
+
   color: #222;
 }
 
 .description {
-  margin-top: 0.5rem;
+  margin-top: 1rem;
   font-size: 0.95rem;
   color: #555;
+}
+
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
 }

@@ -1,0 +1,90 @@
+.tableWrapper {
+  width: 75%;
+  margin: auto;
+  overflow-x: auto; /* horizontal scroll on small screens */
+}
+.heading {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.container {
+  margin-bottom: 5rem;
+}
+.main_para,
+.sub_para {
+  text-align: center;
+}
+.main_para {
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+}
+.sub_para {
+  margin-bottom: 3rem;
+}
+.responsiveTable {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 600px;
+}
+
+.responsiveTable th,
+.responsiveTable td {
+  border: 1px solid #ddd;
+  padding: 12px;
+  text-align: left;
+  vertical-align: top;
+}
+
+.responsiveTable th {
+  background-color: #00a8e8;
+  color: #fff;
+  font-weight: bold;
+  text-align: center;
+}
+
+/* Zebra striping */
+.responsiveTable tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+/* Responsive stacking for small devices */
+@media (max-width: 768px) {
+  .responsiveTable,
+  .responsiveTable thead,
+  .responsiveTable tbody,
+  .responsiveTable th,
+  .responsiveTable td,
+  .responsiveTable tr {
+    display: block;
+    width: 100%;
+  }
+
+  .responsiveTable thead {
+    display: none; /* hide headers */
+  }
+
+  .responsiveTable tr {
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    background: #fff;
+  }
+
+  .responsiveTable td {
+    border: none;
+    padding: 10px 0;
+    position: relative;
+    padding-left: 50%;
+    text-align: left;
+  }
+
+  .responsiveTable td::before {
+    content: attr(data-label);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+    font-weight: bold;
+    white-space: nowrap;
+  }
+}

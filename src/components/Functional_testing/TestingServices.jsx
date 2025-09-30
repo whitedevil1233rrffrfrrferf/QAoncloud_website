@@ -2,10 +2,10 @@ import IconCard from "../Common/card/IconCard";
 import {
   FiTarget,
   FiCheckCircle,
-  FiUsers,
-  FiZap,
+  FiMonitor,
+  FiLayers,
   FiUserCheck,
-  FiShield,
+  FiRefreshCcw,
 } from "react-icons/fi";
 
 import classes from "./TestingServices.module.css";
@@ -18,30 +18,30 @@ export default function TestingServices() {
         <LeftAlignedCard
           Icon={FiTarget}
           title="Unit Testing"
-          description="Test single components for reliability"
+          description="Test individual components of the source code"
         />
         <LeftAlignedCard
           Icon={FiCheckCircle}
           title="Smoke Testing"
-          description="Initial sanity check for core functionality"
+          description="Initial test on the application to qualify it for further testing"
         />
         <LeftAlignedCard
-          Icon={FiUsers}
+          Icon={FiMonitor}
           title="Interface Testing"
-          description="UI/UX consistency across platforms"
+          description="Test the visual aspects of the software"
         />
         <LeftAlignedCard
-          Icon={FiZap}
+          Icon={FiLayers}
           title="Integration Testing"
-          description="Front-to-backend workflow validation"
+          description="Validate frontend and backend integrations to guarantee the smooth functioning of the app."
         />
         <LeftAlignedCard
           Icon={FiUserCheck}
           title="User Acceptance Testing"
-          description="Real user scenarios and feedback"
+          description=" Perform specific tasks on the app to analyze the app performance and its functionalities."
         />
         <LeftAlignedCard
-          Icon={FiShield}
+          Icon={FiRefreshCcw}
           title="Regression Testing"
           description="Ensure updates don't break existing features"
         />

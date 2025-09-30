@@ -10,40 +10,37 @@ import {
 
 import classes from "./CPProcess.module.css";
 import LeftAlignedCard from "../Common/card/LeftAlignedCard";
+import Card from "../Common/card/Card";
 export default function CPProcess() {
   return (
     <div className={classes.container}>
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
-        <LeftAlignedCard
-          Icon={FiTarget}
-          title="Usability Testing"
-          description="Test single components for reliability"
+        <Card
+          title="Application Compatibility Testing"
+          description="
+          Analyze app requirements, ensure preferred operation abilities, and asses app compatibility across software, hardware, networks and browsers."
         />
-        <LeftAlignedCard
-          Icon={FiCheckCircle}
-          title="Mobile Functional Testing"
-          description="Initial sanity check for core functionality"
+        <Card
+          title="Software Compatibility Testing"
+          description="
+          Comprehensive QA testing for software compatibility, testing across various environments, and help develop and upscale plans for bug fixes."
         />
-        <LeftAlignedCard
-          Icon={FiUsers}
-          title="Compliance Testing"
-          description="UI/UX consistency across platforms"
+        <Card
+          title="Browser Compatibility Testing"
+          description="
+          Implement accurate testing strategies, recognize functional defects, identify layout discrepancies, and optimize app performance in commonly used browsers."
         />
-        <LeftAlignedCard
-          Icon={FiZap}
-          title="Mobile Security Testing"
-          description="Front-to-backend workflow validation"
+        <Card
+          title="Database Compatibility Testing"
+          description="
+          Address various database layers testing, test data access, business UI and database, and offer data verification and more robust testing services."
         />
-        <LeftAlignedCard
-          Icon={FiUserCheck}
-          title="Mobile Test Automation"
-          description="Real user scenarios and feedback"
-        />
-        <LeftAlignedCard
-          Icon={FiShield}
-          title="Mobile Accessibility Testing"
-          description="Ensure updates don't break existing features"
+
+        <Card
+          title="Mobile Device Compatibility Testing"
+          description="
+          Maximize test coverage, minimize risks by testing against devices, and test critical security requirements for devices."
         />
       </div>
     </div>

@@ -1,0 +1,63 @@
+.aboutSection {
+  padding: 3rem;
+  background-color: #f9fbfd;
+  text-align: center;
+}
+
+.aboutItem {
+  margin-bottom: 40px;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  justify-content: center;
+}
+
+.icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  flex-shrink: 0;
+}
+
+.title {
+  font-size: 1.4rem;
+  font-weight: 700;
+
+  border-bottom: 3px solid #2196f3;
+  padding-bottom: 2px;
+}
+
+.description {
+  font-size: 1rem;
+  color: #333;
+  line-height: 1.6;
+  margin-left: auto; /* keeps it aligned under title, not under icon */
+  margin-right: auto;
+  width: 75%;
+  text-align: center;
+}
+.inner_header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .aboutSection {
+    padding: 2rem;
+  }
+
+  .header {
+    flex-direction: column;
+
+    gap: 6px;
+  }
+
+  .description {
+    margin-left: 0; /* no indent on mobile */
+  }
+}

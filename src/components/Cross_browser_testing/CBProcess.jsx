@@ -10,40 +10,21 @@ import {
 
 import classes from "./CBProcess.module.css";
 import LeftAlignedCard from "../Common/card/LeftAlignedCard";
+import Card from "../Common/card/Card";
 export default function CBProcess() {
   return (
     <div className={classes.container}>
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
-        <LeftAlignedCard
-          Icon={FiTarget}
-          title="Usability Testing"
-          description="Test single components for reliability"
+        <Card
+          title="Manual Multi Browser Testing"
+          description="
+          Identify the list of browsers, assess the compatibility of the apps, execute manual test cases by QA testers, and run tests across multiple browsers based on priority."
         />
-        <LeftAlignedCard
-          Icon={FiCheckCircle}
-          title="Mobile Functional Testing"
-          description="Initial sanity check for core functionality"
-        />
-        <LeftAlignedCard
-          Icon={FiUsers}
-          title="Compliance Testing"
-          description="UI/UX consistency across platforms"
-        />
-        <LeftAlignedCard
-          Icon={FiZap}
-          title="Mobile Security Testing"
-          description="Front-to-backend workflow validation"
-        />
-        <LeftAlignedCard
-          Icon={FiUserCheck}
-          title="Mobile Test Automation"
-          description="Real user scenarios and feedback"
-        />
-        <LeftAlignedCard
-          Icon={FiShield}
-          title="Mobile Accessibility Testing"
-          description="Ensure updates don't break existing features"
+        <Card
+          title="Automated Multi Browser Testing"
+          description="
+          Maximized time and cost-saving with reduced manual effort, automation test scripts for more accurate testing, and enhanced productivity and app quality with more extensive coverage."
         />
       </div>
     </div>

@@ -9,30 +9,26 @@
   margin: auto;
 }
 .para {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: var(--foreground);
+  font-size: 17px !important;
+  font-weight: 500 !important;
+
   margin-top: 1rem;
-  color: gray;
-}
-.heading {
-  font-size: 3rem; /* adjust as needed */
-  font-weight: 800;
-  background: var(
-    --blue_linear_gradient_left
-  ); /* match the gradient in your image */
-  -webkit-background-clip: text;
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 
   text-align: center;
+}
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 30px !important;
+  line-height: 29px !important;
 }
 .card_container {
   display: flex;
   width: 75%;
   margin: auto;
   justify-content: center;
-  align-items: center;
+  align-items: stretch;
+  height: auto;
   padding: 4rem 2rem;
   flex-wrap: wrap;
   gap: 3rem;
@@ -46,4 +42,20 @@
   margin-top: 2rem;
 
   margin: auto;
+}
+@media (max-width: 1050px) {
+  .card_container {
+    display: flex;
+    width: 95%;
+
+    padding: 2rem;
+    gap: 2rem;
+  }
+}
+@media (max-width: 600px) {
+  .card_container {
+    width: 100%;
+    gap: 2rem;
+    padding: 1rem;
+  }
 }

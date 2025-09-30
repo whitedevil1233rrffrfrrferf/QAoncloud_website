@@ -1,0 +1,9 @@
+.container {
+  margin-top: 7rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch; /* ✅ This stretches all cards to match height */
+  gap: 2rem;
+  padding: 2rem;
+}

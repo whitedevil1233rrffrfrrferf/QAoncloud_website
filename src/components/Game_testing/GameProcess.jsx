@@ -10,40 +10,42 @@ import {
 
 import classes from "./GameProcess.module.css";
 import LeftAlignedCard from "../Common/card/LeftAlignedCard";
+import Card from "../Common/card/Card";
 export default function GameProcess() {
   return (
     <div className={classes.container}>
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
-        <LeftAlignedCard
-          Icon={FiTarget}
-          title="Usability Testing"
-          description="Test single components for reliability"
+        <Card
+          title="Security Testing"
+          description="
+          Improve gaming app security, secure payment gateways and portals, maintaining user data security."
         />
-        <LeftAlignedCard
-          Icon={FiCheckCircle}
-          title="Mobile Functional Testing"
-          description="Initial sanity check for core functionality"
+        <Card
+          title="AR/VR/MR Testing"
+          description="
+          Test game's performance on AR/VR/MR platforms, ensure app stability with advanced technology integrations, test for game app usability friendly."
         />
-        <LeftAlignedCard
-          Icon={FiUsers}
-          title="Compliance Testing"
-          description="UI/UX consistency across platforms"
+        <Card
+          title="Game Console Testing"
+          description="
+          Evaluate gaming app and integration with various devices, ensure that the game runs well on systems like Xbox360, PS4, 3DS, WiiU, and more."
         />
-        <LeftAlignedCard
-          Icon={FiZap}
-          title="Mobile Security Testing"
-          description="Front-to-backend workflow validation"
+        <Card
+          title="GUI Testing"
+          description="
+          Test graphical user interface, test graphic rendering, evaluate if GUI performs well on various hardware and software platforms."
         />
-        <LeftAlignedCard
-          Icon={FiUserCheck}
-          title="Mobile Test Automation"
-          description="Real user scenarios and feedback"
+
+        <Card
+          title="Functionality Testing"
+          description="
+          Ensure game functions meet developer requirements, deliver high-quality games and assess game app functionalities, identifying problems like freezes, and crashes due to errors and bugs."
         />
-        <LeftAlignedCard
-          Icon={FiShield}
-          title="Mobile Accessibility Testing"
-          description="Ensure updates don't break existing features"
+        <Card
+          title="Performance Testing"
+          description="
+          Use key metrics to ensure game quality and performance, ensure the game meets key requirements, identify areas for speed optimization as part of our services, prevent prolonged loading times by ensuring app performance."
         />
       </div>
     </div>

@@ -1,0 +1,5 @@
+{
+    "branchId": "70260600",
+    "clientId": "4b8104dcb97886e8f4b2db03c305fb49",
+    "clientSecret": "9cce8c99b081731454a3282f246d03a9cc30201a1b78657f88f0f04479e01a98"
+}

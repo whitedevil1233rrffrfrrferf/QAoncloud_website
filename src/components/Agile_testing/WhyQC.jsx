@@ -1,31 +1,36 @@
-import { FaRocket, FaRobot, FaSearch, FaBrain } from "react-icons/fa";
+import {
+  FaUserTie, // Skilled Experts
+  FaUsersCog, // Team Collaboration
+  FaProjectDiagram, // Structured Process
+  FaLifeRing, // Continuous Support
+} from "react-icons/fa";
 
 import SliderComponent from "../Common/Slider/SliderComponent";
 
 const slides = [
   {
-    title: "Expert QA Engineers",
+    title: "Skilled QA Experts",
     description:
-      "Our certified testing professionals bring years of experience across diverse industries and technologies.",
-    icon: <FaRocket size={50} color="#ff4d6d" />,
+      "To ensure ongoing project progress and to provide continuous feedback",
+    icon: <FaUserTie size={50} color="#ff4d6d" />,
   },
   {
-    title: "Flexible Engagement",
+    title: "Collaborative Engagement",
     description:
-      "Scale up or down based on your project needs with our adaptable engagement models and pricing.",
-    icon: <FaRobot size={50} color="#ff4d6d" />,
+      "Integrated testing Teams with clear goals to assist in enhancing software quality",
+    icon: <FaUsersCog size={50} color="#ff4d6d" />,
   },
   {
-    title: "Proven Methodology",
+    title: "Structured Methodology",
     description:
-      "Battle-tested processes refined through hundreds of successful projects and client partnerships.",
-    icon: <FaSearch size={50} color="#ff4d6d" />,
+      "Lean Governance to deploy quality checkpoints, metrics, and measures",
+    icon: <FaProjectDiagram size={50} color="#ff4d6d" />,
   },
   {
     title: "24/7 Support",
     description:
-      "Round-the-clock monitoring and support ensures your testing cycles never miss a deadline.",
-    icon: <FaBrain size={50} color="#ff4d6d" />,
+      "Insight Reports to help resolve defects and bugs at the early development stage.",
+    icon: <FaLifeRing size={50} color="#ff4d6d" />,
   },
 ];
 export default function WhyQC() {

@@ -1,0 +1,55 @@
+/* ToolSection.module.css */
+.container {
+  margin: 6rem;
+  margin-bottom: 2rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 600;
+
+  margin-bottom: 2.5rem;
+  color: #222;
+}
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 3rem;
+  margin-top: 4rem;
+  justify-items: center;
+}
+
+.toolCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  border-radius: 12px;
+  background: #fff;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.toolCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.logo {
+  width: 12rem;
+  height: 8rem;
+  object-fit: contain;
+  margin-bottom: 0.5rem;
+  padding: 1rem;
+}
+
+.toolName {
+  font-size: 0.95rem;
+  font-weight: 500;
+  color: #444;
+}

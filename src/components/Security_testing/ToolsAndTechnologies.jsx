@@ -88,8 +88,8 @@ export default function ToolsAndTechnologies() {
         {cardData.map((card, index) => (
           <div className={styles.item} key={index}>
             <i className={`${card.icon} ${styles.icon}`}></i>
-            <h3 className={styles.title}>{card.title}</h3>
-            <p className={styles.description}>{card.description}</p>
+            <h4 className={styles.title}>{card.title}</h4>
+            <span className={styles.description}>{card.description}</span>
           </div>
         ))}
       </div>

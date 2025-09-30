@@ -48,9 +48,9 @@
 }
 
 .stepTitle {
-  font-weight: 650;
-
-  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 23px;
+  font-size: 17px;
 }
 
 .stepDescription {
@@ -69,4 +69,24 @@
 
 .content:hover {
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+}
+@media (max-width: 768px) {
+  .stepWrapper {
+    flex-direction: column; /* stack vertically */
+    align-items: center;
+  }
+
+  .iconWrapper {
+    display: none; /* hide icons + vertical line */
+  }
+
+  .content {
+    width: 100%; /* full width on mobile */
+    margin-bottom: 1.5rem;
+    text-align: center; /* center text */
+  }
+
+  .contentRow {
+    justify-content: center;
+  }
 }

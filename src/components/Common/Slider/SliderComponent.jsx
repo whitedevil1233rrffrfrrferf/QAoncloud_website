@@ -3,6 +3,7 @@
 import Slider from "react-slick";
 import Image from "next/image";
 import styles from "./Slider.module.css";
+import SectionHeader from "../SectionHeader/SectionHeader";
 
 export default function SliderComponent({ title, subtitle, slides }) {
   const settings = {
@@ -27,8 +28,7 @@ export default function SliderComponent({ title, subtitle, slides }) {
   return (
     <section className={styles.section}>
       <div className={styles.header}>
-        <h2>{title}</h2>
-        <p>{subtitle}</p>
+        <SectionHeader heading={title} subheading={subtitle} />
       </div>
       <Slider {...settings} className={styles.slider}>
         {slides.map((slide, index) => (

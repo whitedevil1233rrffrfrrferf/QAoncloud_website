@@ -1,0 +1,10 @@
+.card_container {
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  gap: 3rem;
+}
+.container {
+  padding: 3rem;
+  background-color: #f9fbfc;
+}

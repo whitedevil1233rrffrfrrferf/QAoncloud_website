@@ -1,10 +1,9 @@
 import IconCard from "../Common/card/IconCard";
 import {
-  FaPlug,
-  FaShieldAlt,
-  FaClock,
-  FaRandom,
-  FaExchangeAlt,
+  FaLock, // security lock
+  FaProjectDiagram, // structured architecture
+  FaTachometerAlt, // speed/load
+  FaTasks, // functional checklists
 } from "react-icons/fa";
 
 import classes from "./TestingServices.module.css";
@@ -15,29 +14,24 @@ export default function TestingServices() {
       <h2 className={classes.heading}>Our Testing Services</h2>
       <div className={classes.CardContainer}>
         <LeftAlignedCard
-          Icon={FaPlug}
-          title="Functional Testing"
-          description="Verify that each API endpoint returns the expected response for given inputs."
+          Icon={FaLock}
+          title="API Security Testing"
+          description="Perform security testing on features like Authentication, permission settings and other controls"
         />
         <LeftAlignedCard
-          Icon={FaShieldAlt}
-          title="Security Testing"
-          description="Check APIs against  data leaks, unauthorized access, and injections."
+          Icon={FaProjectDiagram}
+          title="Web API Testing"
+          description="Covers both functionality and the architectural pattern of the app for a complete assessment of the functionalities."
         />
         <LeftAlignedCard
-          Icon={FaClock}
-          title="Performance Testing"
-          description="Measure API speed, scalability, and reliability under different loads."
+          Icon={FaTachometerAlt}
+          title="API Load Testing"
+          description="Use various specific load cases to estimate if the app or software can perform optimally under different loads"
         />
         <LeftAlignedCard
-          Icon={FaRandom}
-          title="Error Handling Testing"
-          description="Ensure APIs return proper error codes and messages for invalid or unexpected inputs."
-        />
-        <LeftAlignedCard
-          Icon={FaExchangeAlt}
-          title="Integration Testing"
-          description="Validate that APIs interact correctly with databases, services, and third-party systems."
+          Icon={FaTasks}
+          title="Functional API Testing"
+          description="Ensures that all aspects are validated based on all functionalities and API Layers."
         />
       </div>
     </div>

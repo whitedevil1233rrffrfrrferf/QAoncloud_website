@@ -8,23 +8,29 @@ export default function Footer() {
         <FooterColumn
           heading="Company"
           links={[
-            { label: "About Us" },
-            { label: "How it works" },
-            { label: "Why Us" },
+            { label: "About Us", href: "about-us" },
+            { label: "How it works", href: "how-we-work" },
+            { label: "Why Us", href: "why-us" },
           ]}
         />
         <FooterColumn
           heading="Quick Links"
           links={[
-            { label: "Engagement & Pricing" },
-            { label: "Careers" },
-            { label: "Tools we use" },
+            { label: "Engagement & Pricing", href: "engagement-model" },
+            { label: "Careers", href: "careers" },
+            { label: "Tools we use", href: "tools-we-use" },
           ]}
         />
-        <FooterColumn heading="Support" links={[{ label: "Contact Us" }]} />
+        <FooterColumn
+          heading="Support"
+          links={[{ label: "Contact Us", href: "contact-us" }]}
+        />
         <FooterColumn
           heading="Policies"
-          links={[{ label: "Privacy Policy" }, { label: "Terms & Condition" }]}
+          links={[
+            { label: "Privacy Policy", href: "about-us" },
+            { label: "Terms & Condition", href: "about-us" },
+          ]}
         />
       </div>
       <div className={styles.bottomText}>

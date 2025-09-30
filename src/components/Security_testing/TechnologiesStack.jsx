@@ -10,18 +10,15 @@ export default function TechnologiesStack() {
       />
 
       <div className={classes.container}>
-        <BoxCard title="Selenium" description="Automation" />
-        <BoxCard title="Appium" description="Mobile Testing" />
-        <BoxCard title="JMeter" description="Performance" />
-        <BoxCard title="Postman" description="API Testing" />
-        <BoxCard title="TestRail" description="Test Management" />
-        <BoxCard title="Jenkins" description="CI/CD" />
-        <BoxCard title="Cypress" description="E2E Testing" />
-        <BoxCard title="Jest" description="Unit Testing" />
-        <BoxCard title="Playwright" description="Web Testing" />
-        <BoxCard title="K6" description="Load Testing" />
-        <BoxCard title="OWASP ZAP" description="Security" />
-        <BoxCard title="Jira" description="Project Management" />
+        <BoxCard title="Burp Suite" description="Automation" />
+        <BoxCard title="OWASP ZAP" description="Mobile Testing" />
+        <BoxCard title="Metasploit" description="Performance" />
+        <BoxCard title="Nessus" description="API Testing" />
+        <BoxCard title="Nmap" description="Test Management" />
+        <BoxCard title="Postman" description="CI/CD" />
+        <BoxCard title="Wireshark" description="E2E Testing" />
+        <BoxCard title="MobSF" description="Unit Testing" />
+        <BoxCard title="Kali Linux" description="Web Testing" />
       </div>
     </div>
   );

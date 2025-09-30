@@ -7,7 +7,7 @@ export default function BoxCard({ title, description }) {
         <div className={classes.innerBox}></div>
       </div>
       <div className={classes.content}>
-        <span className={classes.title}>{title}</span>
+        <h4 className={classes.title}>{title}</h4>
         <span className={classes.description}>{description}</span>
       </div>
     </div>

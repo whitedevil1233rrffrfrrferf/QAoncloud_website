@@ -14,6 +14,9 @@
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Apply fixed width to each card */
@@ -45,4 +48,9 @@
 .description {
   font-size: 0.95rem;
   color: #64748b;
+}
+@media (max-width: 768px) {
+  .CardContainer {
+    width: 100%;
+  }
 }

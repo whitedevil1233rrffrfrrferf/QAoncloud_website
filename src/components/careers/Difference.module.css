@@ -1,0 +1,15 @@
+.container {
+  padding-top: 7rem;
+  margin-bottom: 2rem;
+  background-color: #f9fbfc;
+}
+.heading {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+.card_container {
+  display: flex;
+  justify-content: center;
+  gap: 3rem;
+  flex-wrap: wrap;
+}

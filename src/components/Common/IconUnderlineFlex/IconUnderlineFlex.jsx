@@ -17,7 +17,7 @@ export default function IconUnderlineFlex({ icon, title, description }) {
         data-aos="fade-right"
       />
       <div data-aos="fade-left">
-        <h2 className={styles.title}>{title}</h2>
+        <h3 className={styles.title}>{title}</h3>
         <div className={styles.underline}></div>
         <p className={styles.text}>{description}</p>
       </div>

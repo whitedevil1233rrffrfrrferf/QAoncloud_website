@@ -1,38 +1,56 @@
-// pages/TestingServices.js
-import IconCard from "../Common/card/IconCard.jsx";
-import { FiCheckCircle, FiTrendingUp, FiZap } from "react-icons/fi";
-import SectionHeader from "../Common/SectionHeader/SectionHeader.jsx";
-import styles from "./TestingServices.module.css";
+import IconCard from "../Common/card/IconCard";
+import {
+  FiTarget,
+  FiCheckCircle,
+  FiMonitor,
+  FiLayers,
+  FiUserCheck,
+  FiRefreshCcw,
+} from "react-icons/fi";
 
+import classes from "./TestingServices.module.css";
+import LeftAlignedCard from "../Common/card/LeftAlignedCard";
 export default function TestingServices() {
   return (
-    <section className={styles.section}>
-      <SectionHeader
-        heading="Our Testing Services"
-        subheading="Comprehensive quality assurance solutions designed to deliver reliable, secure, and high-performing software applications."
-      />
-      <div className={styles.cardGrid}>
-        <IconCard
-          Icon={FiZap}
-          title="Manual Testing"
-          description="Comprehensive manual testing by certified QA professionals to ensure your software meets all requirements and provides excellent user experience."
+    <div className={classes.container}>
+      <h2 className={classes.heading}>Our Testing Services</h2>
+      <div className={classes.CardContainer}>
+        <LeftAlignedCard
+          Icon={FiTarget}
+          title="Vulnerability Assessment"
+          description="Systematic scans to uncover security weaknesses, paired with comprehensive reports and actionable mitigation steps to reduce risk exposure."
         />
-        <IconCard
-          Icon={FiZap}
-          title="Automation Testing"
-          description="Efficient automated test suites using industry-leading tools to accelerate your testing cycles and improve coverage."
+        <LeftAlignedCard
+          Icon={FiCheckCircle}
+          title="Penetration Testing"
+          description="Ethical hacking simulations that mimic real-world cyberattacks, helping you uncover
+vulnerabilities with detailed findings and expert remediation guidance."
         />
-        <IconCard
-          Icon={FiZap}
-          title="Performance Testing"
-          description="Load, stress, and performance testing to ensure your application scales efficiently under various conditions."
+        <LeftAlignedCard
+          Icon={FiMonitor}
+          title="Web Application Security Testing"
+          description="Thorough testing of your web applications to detect OWASP Top 10 risks, session
+flaws, input validation gaps, and insecure configurations."
         />
-        <IconCard
-          Icon={FiZap}
-          title="Security Testing"
-          description="Comprehensive security assessments to identify vulnerabilities and protect your application from potential threats."
+        <LeftAlignedCard
+          Icon={FiLayers}
+          title="Mobile Application Security Testing"
+          description="Security testing for Android and iOS apps, focusing on data storage, insecure APIs,
+permissions, and real-device behavior under threat scenarios."
+        />
+        <LeftAlignedCard
+          Icon={FiUserCheck}
+          title="API Security Testing"
+          description="Thorough testing of API endpoints for authentication, authorization, and data security
+issues, including misconfigurations and injection attacks."
+        />
+        <LeftAlignedCard
+          Icon={FiRefreshCcw}
+          title="Security Audits &amp; Compliance Testing"
+          description="Full-scale audits to ensure alignment with standards like OWASP, GDPR, PCI-DSS,
+and HIPAA — keeping your software safe and regulation-ready."
         />
       </div>
-    </section>
+    </div>
   );
 }

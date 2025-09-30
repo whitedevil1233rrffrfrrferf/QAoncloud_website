@@ -1,10 +1,14 @@
 import TestimonialCard from "@/components/HomePage/TestimonialCard";
 import classes from "./clienttestimonials.module.css";
+import SectionHeader from "../Common/SectionHeader/SectionHeader";
 export default function ClientTestimonials() {
   return (
     <div className={classes.testimonials}>
-      <h3>What Our Clients Say</h3>
-      <p>Trusted by teams who demand excellence in software quality</p>
+      <SectionHeader
+        heading="What Our Clients Say"
+        subheading="Trusted by teams who demand excellence in software quality"
+      />
+
       <div className={classes.testimonialCards}>
         <TestimonialCard
           quote="Throughout the project, they demonstrated professionalism, expertise, and effective communication from inquiry to closure. We rate the quality of their work 9 out of 10."

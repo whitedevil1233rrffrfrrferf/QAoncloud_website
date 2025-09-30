@@ -6,8 +6,9 @@
   justify-content: center;
   gap: 2rem;
   flex-wrap: wrap;
-  flex: 1 1 16rem;
-  min-width: 15rem;
+
+  width: 85%;
+
   margin: auto;
 }
 .container h2 {

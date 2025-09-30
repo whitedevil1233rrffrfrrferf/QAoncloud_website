@@ -1,0 +1,47 @@
+.card {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start; /* align text with top of image */
+  gap: 20px; /* space between image and text */
+  padding: 24px 0;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+/* Image section */
+.imageWrapper {
+  flex-shrink: 0; /* prevent shrinking */
+}
+
+.image {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%; /* circle photo */
+  object-fit: cover;
+}
+
+/* Text content */
+.content {
+  flex: 1; /* take remaining space */
+}
+
+.name {
+  font-size: 20px;
+  font-weight: 700;
+  color: #0070f3; /* brand blue */
+}
+
+.role {
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 8px 0;
+}
+
+.company {
+  color: #666;
+}
+
+.text {
+  margin: 0;
+  color: #444;
+  line-height: 1.6;
+}

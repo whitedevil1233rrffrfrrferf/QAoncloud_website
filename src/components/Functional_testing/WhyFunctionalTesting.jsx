@@ -1,6 +1,14 @@
 import IconCard from "../Common/card/IconCard";
 import styles from "./WhyFunctionalTesting.module.css";
-import { FiCheckCircle, FiTrendingUp, FiZap, FiShield } from "react-icons/fi";
+import {
+  FiCheckCircle,
+  FiTrendingUp,
+  FiZap,
+  FiShield,
+  FiDollarSign,
+  FiCpu,
+  FiSmile,
+} from "react-icons/fi";
 export default function WhyFunctionalTesting() {
   return (
     <section className={styles.container}>
@@ -8,23 +16,33 @@ export default function WhyFunctionalTesting() {
       <div className={styles.CardGrid}>
         <IconCard
           Icon={FiCheckCircle}
-          title="Detect Early Bugs"
-          description="Identify defects early in the cycle to avoid expensive fixes and improve code quality. Increase release velocity and reduce maintenance effort."
+          title="Detect defects in advance"
+          description="Identify and eliminate defects in the early stage of product development"
         />
         <IconCard
           Icon={FiTrendingUp}
-          title="Reduce Crashes by 20%"
-          description="Functional testing helps eliminate crash-prone behavior and boosts stability, resulting in a better user experience and higher trust."
+          title="Isolate potential risks"
+          description="Remove defects with lesser time to resolution"
         />
         <IconCard
           Icon={FiZap}
-          title="Smooth User Flow"
-          description="Ensure your users have a seamless journey from start to finish by validating workflows, UI responsiveness, and data accuracy."
+          title="Smooth Updates"
+          description="Retain software quality and smoothly introduce new enhancements"
         />
         <IconCard
-          Icon={FiShield}
-          title="Boost Release Confidence"
-          description="Ensure your users have a seamless journey from start to finish by validating workflows, UI responsiveness, and data accuracy."
+          Icon={FiDollarSign}
+          title="Cost-saving"
+          description="The minimized need for re-work, improved software quality at reasonable costs"
+        />
+        <IconCard
+          Icon={FiCpu}
+          title="Enhance functional performance"
+          description="Ensure that all functions in the software perform exactly how they were designed to perform"
+        />
+        <IconCard
+          Icon={FiSmile}
+          title="Superior Customer Experience"
+          description="user-centric testing strategies to meet specific customer needs"
         />
       </div>
     </section>

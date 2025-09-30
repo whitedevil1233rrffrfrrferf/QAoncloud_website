@@ -33,7 +33,7 @@ export default function Nav() {
                   <ul>
                     <li>
                       <Link
-                        href="/Security_testing"
+                        href="/security-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -45,7 +45,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Functional_testing"
+                        href="/functional-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -57,7 +57,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Automation_testing"
+                        href="/automation-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -71,7 +71,7 @@ export default function Nav() {
                   <ul className={styles.menuBorder}>
                     <li>
                       <Link
-                        href="/Regression_testing"
+                        href="/regression-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -82,7 +82,10 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <Link href="/API_testing" className={styles.dropdownItem}>
+                      <Link
+                        href="/api-testing-services"
+                        className={styles.dropdownItem}
+                      >
                         <img
                           src="/images/Nav/services/api.png"
                           className={styles.menuIcon}
@@ -92,7 +95,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Agile_testing"
+                        href="/agile-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -116,7 +119,7 @@ export default function Nav() {
                   <ul>
                     <li>
                       <Link
-                        href="/Mobile_testing"
+                        href="/mobile-app-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -128,7 +131,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Website_testing"
+                        href="/web-app-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -140,7 +143,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Game_testing"
+                        href="/game-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -154,7 +157,7 @@ export default function Nav() {
                   <ul className={styles.menuBorder}>
                     <li>
                       <Link
-                        href="/Cross_platform_testing"
+                        href="/cross-platform-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -166,7 +169,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/Cross_browser_testing"
+                        href="/cross-browser-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -178,7 +181,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/SmartTV_testing"
+                        href="/smart-tv-app-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -279,13 +282,13 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link href="/case-study" className={styles.dropdownItem}>
                         <img
-                          src="/menu-icons/solution/feature.png"
+                          src="/images/Nav/insi/case.png"
                           className={styles.menuIcon}
                         />
                         Case Studies
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <a href="#" className={styles.dropdownItem}>
@@ -297,13 +300,13 @@ export default function Nav() {
                       </a>
                     </li>
                     <li>
-                      <a href="#" className={styles.dropdownItem}>
+                      <Link href="/testimonial" className={styles.dropdownItem}>
                         <img
-                          src="/menu-icons/solution/responsive-devices.png"
+                          src="/images/Nav/insi/team.png"
                           className={styles.menuIcon}
                         />
                         Testimonials
-                      </a>
+                      </Link>
                     </li>
                   </ul>
                 </div>

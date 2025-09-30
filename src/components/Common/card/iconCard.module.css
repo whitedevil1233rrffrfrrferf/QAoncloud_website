@@ -6,7 +6,7 @@
   text-align: center;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
   transition: transform 0.2s ease;
-  flex: 1 15rem;
+  flex: 1 1 18rem;
   max-width: 20rem;
 }
 

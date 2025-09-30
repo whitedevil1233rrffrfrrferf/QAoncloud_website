@@ -9,7 +9,6 @@
   transition: transform 0.3s ease;
   position: relative; /* needed for absolute ::after */
   overflow: hidden; /* to keep the line contained */
-  height: 18rem;
 }
 
 .card:hover {
@@ -30,16 +29,9 @@
   width: 100%;
 }
 
-.title {
-  font-size: 1.2rem;
-  font-weight: 600;
-  color: #1a1a1a;
-  margin-bottom: 0.5rem;
-}
-
-.description {
-  font-size: 0.95rem;
-  margin-top: 1rem;
-  color: #555e6c;
-  line-height: 1.6;
+@media (max-width: 600px) {
+  .card {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
 }

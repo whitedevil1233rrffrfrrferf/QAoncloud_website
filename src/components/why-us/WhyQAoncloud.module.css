@@ -1,0 +1,74 @@
+.whySection {
+  max-width: 80%;
+  margin: 0 auto;
+  padding: 3rem;
+  font-family: Arial, sans-serif;
+  color: #333;
+}
+
+.whyHeader {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.whyHeader h2 {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.highlight {
+  color: #00aaff;
+}
+
+.whyHeader p {
+  font-size: 18px;
+  margin-top: 10px;
+  line-height: 1.6;
+  color: #555;
+}
+
+/* Generic item layout */
+.whyItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px;
+  border-radius: 8px;
+  margin-bottom: 40px;
+  gap: 20px;
+}
+
+.grayBg {
+  background: #f3f3f3;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.text {
+  flex: 1;
+  text-align: left;
+}
+
+.text h3 {
+  font-size: 22px;
+  font-weight: 700;
+  margin-bottom: 12px;
+  color: #0d2a56;
+}
+
+.text p {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #444;
+}
+
+.icon {
+  flex: 0 0 120px;
+  text-align: right;
+}
+
+.icon img {
+  width: 15rem;
+}
