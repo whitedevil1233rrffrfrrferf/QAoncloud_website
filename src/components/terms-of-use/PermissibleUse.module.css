@@ -1,0 +1,32 @@
+.container {
+  text-align: center;
+  padding: 60px 20px;
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.heading {
+  font-size: 2rem;
+  color: #222;
+  margin-bottom: 10px;
+  font-weight: 600;
+}
+
+.subtext {
+  font-size: 1.1rem;
+  color: #444;
+  font-weight: bold !important;
+  margin-bottom: 25px;
+}
+
+/* ✅ Ensure ListComponent is also centered */
+
+/* ✅ Responsive */
+@media (max-width: 768px) {
+  .heading {
+    font-size: 1.6rem;
+  }
+  .subtext {
+    font-size: 1rem;
+  }
+}

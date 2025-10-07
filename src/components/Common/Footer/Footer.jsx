@@ -28,8 +28,8 @@ export default function Footer() {
         <FooterColumn
           heading="Policies"
           links={[
-            { label: "Privacy Policy", href: "about-us" },
-            { label: "Terms & Condition", href: "about-us" },
+            { label: "Privacy Policy", href: "privacy-policy" },
+            { label: "Terms & Condition", href: "terms-of-use" },
           ]}
         />
       </div>

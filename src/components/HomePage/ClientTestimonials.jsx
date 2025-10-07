@@ -11,18 +11,18 @@ export default function ClientTestimonials() {
 
       <div className={classes.testimonialCards}>
         <TestimonialCard
-          quote="Throughout the project, they demonstrated professionalism, expertise, and effective communication from inquiry to closure. We rate the quality of their work 9 out of 10."
-          name="Kavitha Sivashankaran"
-          title="Engineer: Quality and Regulatory Affairs"
+          quote="Thank you for all the time you have taken off our hands to test our growing product and do it well. We appreciate all the attention to detail and promptness of response."
+          name="Pratyush Singh"
+          title="Co-founder"
           companyLink="https://example.com"
-          companyName="G3 MEDICAL SYSTEMS PVT LTD"
+          companyName="Venzi"
         />
         <TestimonialCard
-          quote="They helped us detect app crashes which were affecting our downloads significantly. They have now taken the responsibility of giving a QA clear to all our development sprints."
-          name="Gautam Chakravarthy"
-          title="Engineering Manager"
+          quote="QAonCloud is 40% more cost-effective than other options, the bugs also helped us make design optimization. The team has shown tremendous ownership, has done flawless delivery, and is a very quick learner."
+          name="Donald Le"
+          title="Tech Director"
           companyLink="https://example.com"
-          companyName="Tokopedia"
+          companyName="AOL"
         />
         <TestimonialCard
           quote="QAonCloud helped us set up and formalise our testing from scratch and helped us deliver a great product to our first customers. Thanks for the great work!"

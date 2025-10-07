@@ -1,42 +1,42 @@
-import Head from "next/head";
-import styles from "./Banner.module.css";
 import Image from "next/image";
-
 import Button from "../Common/Button/Button";
+import styles from "./Banner.module.css";
 
-export default function Banners() {
+export default function Banner() {
   return (
-    <div className={styles.wrapper}>
-      <div className={styles.container}>
-        <div className={styles.left}>
-          <div className={styles.text}>
-            <h1>
-              <span className={styles.bold}>Impact-Driven Software </span>
-              <br />
-              <span className={styles.accent}>Testing Services</span>
-            </h1>
-            <p className={styles.para_text}>
-              Accelerate your product launch with our end-to-end QA solutions
-              tailored to your business goals.
-            </p>
-            <div className={styles.stats}>
-              <Button content="Get A Free Consultation" bgColor="#2f8fff" />
-              <Button content="Get a Free Test Audit" bgColor="#ff6f61" />
-              <div className={`${styles.button} ${styles.audit}`}></div>
-            </div>
+    <section className={styles.banner}>
+      <div className={styles.content}>
+        <div className={styles.textSection}>
+          <h1>
+            Get Your App Tested By
+            
+            Remote , Flexible ,
+            On-Demand Teams
+          </h1>
+          <p>
+            QAoncloud offers tailor-made testing solutions to fit your business
+            needs and guarentees huge benefits compared to the in-house team.
+            Our fully competent workforce delivers highly flexible, reliable
+          </p>
+
+          <div className={styles.buttons}>
+            <Button content="Contact Us" bgColor="#2f8fff" />
           </div>
         </div>
-        <div className={styles.right}>
-          <Image
-            src="/images/banner/software_testing.jpg"
-            alt="QA team illustration"
-            width={700}
-            height={700}
-            style={{ maxWidth: "100%", height: "auto" }}
-            priority
-          />
+
+        <div className={styles.imageSection}>
+          <div className={styles.imageWrapper}>
+            <Image
+              src="/images/banner/software_testing.jpg"
+              alt="Software testing team illustration"
+              width={550}
+              height={400}
+              className={styles.image}
+              priority
+            />
+          </div>
         </div>
       </div>
-    </div>
+    </section>
   );
 }

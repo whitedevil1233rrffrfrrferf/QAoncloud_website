@@ -1,40 +1,40 @@
-.banner{
-    background-color: var(--navy_blue);
-    height:100vh;
-    display: flex;                /* Make banner a flex container */
-    justify-content: center;     /* Center horizontally */
-    align-items: center;   
-
+.banner {
+  background-color: var(--navy_blue);
+  height: 100vh;
+  display: flex; /* Make banner a flex container */
+  justify-content: center; /* Center horizontally */
+  align-items: center;
 }
-.content{
-    margin-top: auto;
-    margin-bottom: auto;
-    
-    gap: 7rem;
-    display: flex;
-    padding:5rem 2rem ;
-    align-items: center;
-    justify-content: space-between;
+
+.content {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  gap: 7rem;
+  display: flex;
+  padding: 5rem 2rem;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .whiteIcon {
   color: white;
-  font-size:20rem; /* Or use clamp() for responsiveness */
+  font-size: 20rem; /* Or use clamp() for responsiveness */
   /* Optional hover effect */
   transition: transform 0.3s ease;
 }
-.heading{
-    color: var(--light_blue);
-    margin-bottom: 2rem;
-    line-height: 1.2;
+.heading {
+  color: var(--light_blue);
+  margin-bottom: 2rem;
+  line-height: 1.2;
 }
-.para{
-    color: white;
-    line-height: 2;
-    font-size:1.1rem;
+.para {
+  color: white;
+  line-height: 2;
+  font-size: 1.1rem;
+  width: 20%;
 }
-.btn{
-    background-color: var(--light_blue);
-    width: 6rem;
-   
+.btn {
+  background-color: var(--light_blue);
+  width: 6rem;
 }

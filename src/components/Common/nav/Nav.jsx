@@ -5,7 +5,7 @@ import styles from "./nav.module.css";
 
 export default function Nav() {
   const [isOpen, setIsOpen] = useState(false);
-
+  const [openDropdown, setOpenDropdown] = useState(null);
   return (
     <nav className={styles.header}>
       <div className={styles.container}>
@@ -24,10 +24,24 @@ export default function Nav() {
         {/* Nav Links */}
         <div className={`${styles.navMenu} ${isOpen ? styles.showMenu : ""}`}>
           <ul className={styles.navLinks}>
-            <li className={styles.dropdown}>
-              <span className={styles.navLink}>
+            <li
+              className={`${styles.dropdown} ${
+                openDropdown === "services" ? styles.open : ""
+              }`}
+            >
+              {/* Dropdown toggle */}
+              <span
+                className={styles.navLink}
+                onClick={() =>
+                  setOpenDropdown(
+                    openDropdown === "services" ? null : "services"
+                  )
+                }
+              >
                 Services <span className={styles.dropdownIcon}>▲</span>
               </span>
+
+              {/* Dropdown menu */}
               <div className={styles.dropdownMenu}>
                 <div className={styles.serviceList}>
                   <ul>
@@ -109,9 +123,19 @@ export default function Nav() {
                 </div>
               </div>
             </li>
-
-            <li className={styles.dropdown}>
-              <span className={styles.navLink}>
+            <li
+              className={`${styles.dropdown} ${
+                openDropdown === "solutions" ? styles.open : ""
+              }`}
+            >
+              <span
+                className={styles.navLink}
+                onClick={() =>
+                  setOpenDropdown(
+                    openDropdown === "solutions" ? null : "solutions"
+                  )
+                }
+              >
                 Solutions <span className={styles.dropdownIcon}>▲</span>
               </span>
               <div className={styles.dropdownMenu}>
@@ -195,8 +219,19 @@ export default function Nav() {
                 </div>
               </div>
             </li>
-            <li className={styles.dropdown}>
-              <span className={styles.navLink}>
+            <li
+              className={`${styles.dropdown} ${
+                openDropdown === "industries" ? styles.open : ""
+              }`}
+            >
+              <span
+                className={styles.navLink}
+                onClick={() =>
+                  setOpenDropdown(
+                    openDropdown === "industries" ? null : "industries"
+                  )
+                }
+              >
                 Industries <span className={styles.dropdownIcon}>▲</span>
               </span>
               <div className={styles.dropdownMenu}>
@@ -204,7 +239,7 @@ export default function Nav() {
                   <ul>
                     <li>
                       <Link
-                        href="/FinTechTestingServices"
+                        href="/fintech-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -216,7 +251,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/CommunicationsTestingServices"
+                        href="/telecom-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -228,7 +263,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/EventManagementTestingServices"
+                        href="/event-management-software-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -241,7 +276,10 @@ export default function Nav() {
                   </ul>
                   <ul className={styles.menuBorder}>
                     <li>
-                      <Link href="/ECommerce" className={styles.dropdownItem}>
+                      <Link
+                        href="/e-commerce-testing-services"
+                        className={styles.dropdownItem}
+                      >
                         <img
                           src="/images/Nav/indus/ecommerce.png"
                           className={styles.menuIcon}
@@ -251,7 +289,7 @@ export default function Nav() {
                     </li>
                     <li>
                       <Link
-                        href="/AITestingServices"
+                        href="/ai-testing-services"
                         className={styles.dropdownItem}
                       >
                         <img
@@ -265,8 +303,19 @@ export default function Nav() {
                 </div>
               </div>
             </li>
-            <li className={styles.dropdown}>
-              <span className={styles.navLink}>
+            <li
+              className={`${styles.dropdown} ${
+                openDropdown === "insights" ? styles.open : ""
+              }`}
+            >
+              <span
+                className={styles.navLink}
+                onClick={() =>
+                  setOpenDropdown(
+                    openDropdown === "insights" ? null : "insights"
+                  )
+                }
+              >
                 Insights <span className={styles.dropdownIcon}>▲</span>
               </span>
               <div className={styles.dropdownMenu}>
@@ -291,13 +340,13 @@ export default function Nav() {
                       </Link>
                     </li>
                     <li>
-                      <a href="/FAQ" className={styles.dropdownItem}>
+                      <Link href="/faq" className={styles.dropdownItem}>
                         <img
-                          src="/menu-icons/solution/testing.png"
+                          src="/images/Nav/insi/faq.png"
                           className={styles.menuIcon}
                         />
                         FAQS
-                      </a>
+                      </Link>
                     </li>
                     <li>
                       <Link href="/testimonial" className={styles.dropdownItem}>
@@ -313,10 +362,9 @@ export default function Nav() {
               </div>
             </li>
           </ul>
-
-          <a href="#" className={styles.cta}>
+          <Link href="/contact-us" className={styles.cta}>
             Contact Us
-          </a>
+          </Link>
         </div>
       </div>
     </nav>

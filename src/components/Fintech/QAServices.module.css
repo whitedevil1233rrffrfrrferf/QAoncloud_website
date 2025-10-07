@@ -1,35 +1,30 @@
 .service {
   background-color: var(--white-light);
-  padding: 4rem 2rem;
+  padding: 2rem;
   border-top: 1px solid var(--light_gray_border); /* subtle top border */
   /* Optional smooth box shadow instead: */
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
   margin-top: 2rem;
-  background: linear-gradient(to right, #172c79, #36a4ff);
+
   margin: auto;
 }
 .para {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: white;
+  text-align: center;
   margin-top: 1rem;
 }
 .heading {
-  font-size: 2rem; /* adjust as needed */
-
   /* background: var(
     --blue_linear_gradient_left
   ); match the gradient in your image */
   font-weight: 650;
   text-align: center;
-  color: white;
 }
 .card_container {
   display: flex;
   width: 75%;
   margin: auto;
   justify-content: center;
-  align-items: center;
+  align-items: stretch; /* ensures equal height */
   padding: 4rem 2rem;
   flex-wrap: wrap;
   gap: 3rem;
@@ -38,8 +33,19 @@
   padding: 4rem 2rem;
 
   /* Optional smooth box shadow instead: */
-  background: linear-gradient(to right, #172c79, #36a4ff);
+
   margin-top: 2rem;
 
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 1rem;
+  }
+  .card_container {
+    width: 100%;
+
+    gap: 2rem;
+  }
 }

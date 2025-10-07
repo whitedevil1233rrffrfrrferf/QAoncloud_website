@@ -1,6 +1,7 @@
 .mapContainer {
   position: relative;
-  height: 130vh;
+  width: 100%;
+  height: 100vh;
   overflow: hidden;
 }
 
@@ -8,6 +9,9 @@
   position: absolute;
   transform: translate(-50%, -50%);
   z-index: 10;
+}
+.mobile {
+  display: none;
 }
 
 .marker {
@@ -57,4 +61,26 @@
   border-top: 10px solid transparent;
   border-bottom: 10px solid transparent;
   border-right: 10px solid white;
+}
+
+@media (max-width: 1000px) {
+  .mapContainer {
+    position: relative;
+    width: 100%;
+    aspect-ratio: 26 /19; /* adjust according to your image ratio */
+
+    overflow: hidden;
+  }
+}
+@media (max-width: 770px) {
+  .mapContainer {
+    display: none;
+  }
+  .mobile {
+    display: block; /* ✅ make it visible */
+    position: relative; /* needed for next/image with fill */
+    width: 100%;
+
+    aspect-ratio: 10 / 9; /* ensures it has visible height */
+  }
 }

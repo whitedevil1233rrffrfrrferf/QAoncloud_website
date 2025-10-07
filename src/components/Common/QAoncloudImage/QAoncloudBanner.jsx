@@ -27,7 +27,7 @@ export default function QAoncloudBanner({
 
         {/* Content section */}
         <div className={styles.content}>
-          <h1 className={styles.title}>{title}</h1>
+          <span className={styles.title}>{title}</span>
           {subtitle && <p className={styles.subtitle}>{subtitle}</p>}
           {buttonText && buttonLink && (
             <a href={buttonLink} className={styles.button}>

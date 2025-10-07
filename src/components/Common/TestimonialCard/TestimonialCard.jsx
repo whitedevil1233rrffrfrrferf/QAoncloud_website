@@ -1,3 +1,4 @@
+import { FaPlay } from "react-icons/fa";
 import styles from "./TestimonialCard.module.css";
 
 export default function TestimonialCard({ client }) {
@@ -35,11 +36,9 @@ export default function TestimonialCard({ client }) {
               alt={`${name} testimonial video`}
               className={styles.thumbnailImage}
             />
-            <img
-              src="/icons/play-button.svg"
-              alt="Play"
-              className={styles.playIcon}
-            />
+            <div className={styles.playButton}>
+              <FaPlay className={styles.playIcon} />
+            </div>
           </a>
         </div>
       )}

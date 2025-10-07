@@ -1,7 +1,7 @@
 .card {
   background: #fff;
   border-radius: 16px;
-  padding: 1rem;
+  padding: 0.5rem;
   width: 20rem;
 
   text-align: center;
@@ -24,7 +24,9 @@
   font-weight: 750;
   /* make it a bit bolder */
 }
-
+.quote {
+  font-size: 0.85rem !important;
+}
 .subtext {
   font-size: 0.85rem;
   color: #666;
@@ -44,16 +46,33 @@
   width: 100%;
   height: auto;
 }
-
+.playButton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #ff0000;
+  width: 80px;
+  height: 53px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
 .playIcon {
   position: absolute;
   top: 50%;
   left: 50%;
-  width: 48px;
-  height: 48px;
+  width: 30px;
+  height: 30px;
   transform: translate(-50%, -50%);
   opacity: 0.9;
   transition: transform 0.2s ease;
+  color: white;
+  font-size: 1rem;
+  margin-left: 4px; /* centers the triangle visually */
 }
 
 .videoThumbnail:hover .playIcon {
@@ -61,5 +80,6 @@
 }
 .heading {
   font-weight: 800;
-  font-size: 1.5rem;
+  font-size: 1.2rem !important;
+  margin-top: 0.5rem !important;
 }

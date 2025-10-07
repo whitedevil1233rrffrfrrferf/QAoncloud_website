@@ -1,0 +1,25 @@
+.faqSection {
+  max-width: 60%;
+  margin: 0 auto;
+  padding: 2rem 1rem;
+}
+
+.heading {
+  text-align: center;
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  color: #002147;
+}
+.FAQ_div {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem !important;
+}
+
+@media (max-width: 600px) {
+  .faqSection {
+    max-width: 100%;
+    padding: 1.2rem;
+  }
+}

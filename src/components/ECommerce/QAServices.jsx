@@ -1,3 +1,4 @@
+import Card from "../Common/card/Card";
 import RoundedIconCard from "../Common/RoundedIconCard/RoundedIconCard";
 import styles from "./QAServices.module.css";
 import { FaRobot, FaShieldAlt, FaClipboardCheck } from "react-icons/fa";
@@ -11,41 +12,52 @@ export default function QAServices() {
         to timely deliveries with uncompromised quality.
       </p>
       <div className={styles.card_container}>
-        <RoundedIconCard
-          icon={<FaRobot />}
-          title="Analytics Testing"
-          description="Monitor and report vital analytics.Evaluate individual features and make performance reports.Enhance app performance based on the detailed reports."
-        />
-        <RoundedIconCard
+        <Card
           icon={<FaRobot />}
           title="Functional Testing"
-          description="Monitor, test, and validate app functions at various user levels.Ensure quality design and aesthetics.Assess integrations and scan codes for gaps or bugs"
+          description="Comprehensive assessment of all app functionalities to ensure seamless front-end and back-end integrations. Validate key features, eliminate bugs, and enhance the interface for a smooth user experience. Back-end verification prevents crashes and blockers."
         />
-        <RoundedIconCard
+        <Card
+          icon={<FaRobot />}
+          title="Load Testing"
+          description="Evaluate app performance under heavy traffic and varying conditions. Conduct conditional and environment-based analyses to ensure sustainability during customer surges. Detailed load test reports help improve app speed and reliability."
+        />
+
+        <Card
           icon={<FaRobot />}
           title="Usability Testing"
           description="
-          Pre-event preparation & practice cycle testing.Assure the best user experience with agile testing.
-          Use real-time data on user behavior to enhance UX/UI"
+          Assess the user interface and overall customer experience to build customer-centric solutions. Analyze real-time behavior and user patterns to optimize usability and maximize success rates."
         />
-        <RoundedIconCard
+        <Card
           icon={<FaRobot />}
-          title="Localization Testing"
+          title="Regression Testing"
           description="
-          Manage, and monitor all localization testing.Identify unique issues impacting audiences.Incorporate demographic specifics to enhance the app’s overall value.Ensure high performance and a glitch-free user interface"
+          Perform thorough regression tests before every update or software modification to ensure smooth launches and bug-free enhancements."
         />
-
-        <RoundedIconCard
+        <Card
           icon={<FaRobot />}
-          title="Data Integrity"
+          title="Cross-Browser Testing"
           description="
-          Uses proven strategies for software testing to keep data secure and intact.Ensures that apps have a solid framework for seamless integration.Maintains a robust database of app usage to induce a better user experience."
+          Test the E-Commerce site across multiple browsers to verify stability, speed, and functionality. Ensure seamless performance, compatibility, and consistent user experience across all platforms."
         />
-        <RoundedIconCard
+        <Card
+          icon={<FaRobot />}
+          title="Payment Gateway Testing"
+          description="
+          Evaluate the performance, security, and integration of payment gateways. Strengthen payment portals, secure user data, and verify third-party integrations for smooth, safe, and successful transactions."
+        />
+        <Card
+          icon={<FaRobot />}
+          title="Mobile Testing"
+          description="
+          Deploy mobile apps with QAonCloud’s robust testing strategy using real devices, emulators, and simulators. Validate performance across browsers and platforms with automation for faster cycles. Implement user-centric test plans and load testing to optimize speed, capacity, and satisfaction."
+        />
+        <Card
           icon={<FaRobot />}
           title="Performance Testing"
           description="
-          Ensure high performance and a glitch-free user interface.Helps customers have a quality experience on the app.Building trust and reliability among the BFSI customers."
+          Ensure a smooth and responsive user experience through tailored performance tests using open-source and COTS toolsets. Simulate various workloads, seasonal fluctuations, and upgrade scenarios. Identify and fix errors proactively to enhance software performance and code quality."
         />
       </div>
     </div>

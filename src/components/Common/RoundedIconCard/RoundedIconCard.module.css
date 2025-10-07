@@ -10,6 +10,10 @@
   position: relative;
   transition: transform 0.3s ease;
   margin-bottom: 2rem;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: flex-start;
 }
 .card:hover {
   transform: translateY(-5px);
@@ -40,9 +44,10 @@
 }
 
 .description {
-  margin-top: 1rem;
-  font-size: 0.95rem;
-  color: #555;
+  text-align: left;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 35rem;
 }
 
 @media (max-width: 600px) {

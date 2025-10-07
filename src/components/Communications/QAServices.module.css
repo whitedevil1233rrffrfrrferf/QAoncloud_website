@@ -5,13 +5,12 @@
   /* Optional smooth box shadow instead: */
   box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.3);
   margin-top: 2rem;
-  background: linear-gradient(to right, #172c79, #36a4ff);
+
   margin: auto;
 }
 .para {
-  font-size: 1.2rem;
-  line-height: 1.5;
-  color: white;
+  text-align: center;
+
   margin-top: 1rem;
 }
 .heading {
@@ -22,14 +21,13 @@
   ); match the gradient in your image */
   font-weight: 650;
   text-align: center;
-  color: white;
 }
 .card_container {
   display: flex;
   width: 75%;
   margin: auto;
   justify-content: center;
-  align-items: center;
+  align-items: strech;
   padding: 4rem 2rem;
   flex-wrap: wrap;
   gap: 3rem;
@@ -38,8 +36,19 @@
   padding: 4rem 2rem;
 
   /* Optional smooth box shadow instead: */
-  background: linear-gradient(to right, #172c79, #36a4ff);
+
   margin-top: 2rem;
 
   margin: auto;
+}
+
+@media (max-width: 768px) {
+  .service {
+    padding: 1rem;
+  }
+  .card_container {
+    width: 100%;
+
+    gap: 2rem;
+  }
 }
